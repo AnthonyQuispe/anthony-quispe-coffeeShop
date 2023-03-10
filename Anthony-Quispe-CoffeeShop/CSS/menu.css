@@ -13,6 +13,7 @@ p {
 }
 
 h1 {
+  display: flex;
   font-size: 3.75rem;
   font-weight: 300;
   color: #fff;
@@ -20,14 +21,14 @@ h1 {
   background-color: #393939;
   height: 12.5rem;
   width: 18.75rem;
-  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 h2 {
   text-align: center;
   font-size: 3.75rem;
   font-weight: 300;
   color: #393939;
-  padding: 1.25rem;
   margin: center;
 }
 
@@ -38,19 +39,26 @@ a {
 /* nav */
 .nav {
   background-color: #fff0ed;
+  padding: 15px;
 }
 
-.nav__container,
-.nav__container-li,
-.nav__container-h2,
 .nav__container-ul {
-  display: inline;
-  text-align: left;
+  display: flex;
+  list-style-type: none;
+  align-self: flex-end;
 }
 .nav__container {
-  margin: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+.nav__container-left {
+  display: flex;
+}
+.nav__container-ul {
+  justify-content: flex-end;
+}
 .nav__container-li {
   font-size: 1.3125rem;
   font-weight: 400;
@@ -65,7 +73,6 @@ a {
   font-size: 3.75rem;
   font-weight: 300;
   color: #393939;
-  margin-right: 20px;
 }
 
 .nav__container-a {
@@ -83,6 +90,9 @@ a {
   height: 43.75rem;
   background-position: center;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Sub Navigation */

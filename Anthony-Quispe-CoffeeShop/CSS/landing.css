@@ -2,17 +2,14 @@
   margin: 0;
   padding: 0;
 }
-
+/* Typography */
 h1,
 h2,
 h3 {
   font-weight: 300;
   color: #393939;
 }
-h1 {
-  font-size: 3.75rem;
-}
-
+h1,
 h2 {
   font-size: 3.75rem;
 }
@@ -21,147 +18,188 @@ h3 {
   font-size: 2.0625rem;
 }
 
+/* Buttons */
+
 button {
   background-color: #5bacc3;
   color: #fff;
-  border: none;
   width: 180px;
-  padding: 1.25rem;
   font-size: 1.3125rem;
   font-weight: 400;
-  margin: 1.25rem;
   padding: 1.25rem;
 }
+
+/* IMAGES */
+img {
+  height: 17.5rem;
+}
+
+/* links */
 
 a {
   text-decoration: none;
-}
-
-/* Nav */
-
-.nav {
-  background-color: #fff0ed;
-  width: 100%;
-}
-
-.nav li {
-  display: inline;
-  font-size: 1.3125rem;
-  font-weight: 400;
-  margin: 1.25rem;
-}
-
-.nav h2 {
-  display: inline;
-  margin-right: 1.25rem;
-}
-
-.nav ul {
-  display: inline;
-  text-align: left;
-}
-.nav a {
   color: #393939;
 }
 
-.nav-ul__fontBlue {
-  color: #5bacc3;
-}
+/* body,
+footer {
+  max-width: 1280px;
+} */
 /* header */
-
 .header {
   background-color: #fff0ed;
   text-align: center;
 }
 
-.header__text {
-  display: inline-block;
-  width: 330px;
-  height: 540px;
-  padding: 40px;
-  margin: 40px;
-  margin-right: 200px;
-  border-radius: 10px;
-  vertical-align: middle;
-  text-align: left;
+/* nav */
+.nav {
+  padding: 15px;
 }
 
-.header__text h1 {
-  margin-top: 6.25rem;
+.nav__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav__container-left {
+  display: flex;
+}
+
+.nav__list {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.nav__li {
+  font-size: 1.3125rem;
+  font-weight: 400;
+  margin: 1.25rem;
+}
+
+.nav__li--shop {
+  color: #5bacc3;
+}
+
+.nav__li--shop {
+  border-width: 2px;
+  border-color: Graphite;
+}
+
+.nav__title {
+  font-size: 3.75rem;
+}
+
+.nav__logos {
+  width: 3.125rem;
+  height: 3.125rem;
+}
+
+/* HERO */
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3.125rem 0;
+}
+.hero__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 50%;
+}
+
+.hero__picture {
+  width: 330px;
+  height: 540px;
+}
+
+.hero__button {
+  margin: 1.25rem 0;
+}
+
+.hero__description {
+  text-align: left;
+  width: 55%;
+  margin: 20px 0 30px;
+}
+
+/* Products */
+.products {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding-top: 3.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.products__title {
   margin-bottom: 1.25rem;
 }
 
-.header__picture {
-  display: inline-block;
-  width: 330px;
-  height: 540px;
-  padding: 40px;
-  margin: 40px;
-  margin-left: 200px;
-  border-radius: 10px;
-  vertical-align: top;
-}
-/* product Section */
-.product-section_cards {
+.products__cards {
   display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
-.product-section__coffeeBeans,
-.product-section__coldBrew,
-.product-section__inHouseBrew {
+
+.product-section__coffeebeans,
+.product-section__coldbrew,
+.product-section__inhousebrew {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   width: 330px;
   height: 440px;
   margin: 40px;
   border-radius: 10px;
   box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
-  text-align: center;
+  align-content: center;
+  justify-content: flex-end;
   overflow: hidden;
 }
 
-.product-section__font--blue {
+.product__price {
   font-size: 2.0625rem;
   font-weight: 400;
   color: #5bacc3;
-  /* align-self: flex-end; */
+  margin: 1.25rem;
 }
 
-.product-section img {
-  height: 17.5rem;
-  margin: 20px;
-}
-
-.product-section {
+.product__bottom {
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  flex-direction: column;
-  background-color: #f7f7f7;
-  padding-top: 3.75rem;
+  background-color: #fff0ed;
+  padding: 15px;
+  padding-bottom: 20px;
+  justify-content: flex-end;
 }
 
-.product-section_viewAll {
-  display: flex;
-  padding: 1.25rem;
+.product-section__viewall {
   padding-bottom: 2.5rem;
 }
 
-.product-section_cards--textbox {
+.product__text {
   display: flex;
   flex-direction: column;
-  background-color: #fff0ed;
-  height: 30%;
   align-items: flex-start;
-  justify-content: center;
+}
+
+.product__description {
+  color: #909090;
 }
 
 /* discount section */
 .discount-section__banner {
-  width: 90%;
+  /* width: 90%; */
   background-color: #393939;
   text-align: center;
   color: #fff;
-  margin: auto;
-  padding: 40px;
+  margin-top: 100px;
+  padding: 30px;
 }
 
 .discount-section__font {
@@ -169,32 +207,78 @@ a {
   font-weight: 400;
 }
 
-.discount-section__font strong {
+.discount__code {
   font-weight: 700;
 }
 
-.discount-section {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+.discount {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0;
+  padding: 100px 0;
+  align-items: center;
 }
+
+.discount__logo {
+  width: 50px;
+  height: 50px;
+}
+
+.discount__top,
+.discount__left {
+  display: flex;
+  justify-content: space-evenly;
+}
+.discount__left {
+  flex-direction: column;
+}
+.discount__right {
+  display: flex;
+  background-image: url(../Assets/coldbrewbackground.png);
+  background-size: cover;
+  background-position: center;
+  width: 400px;
+  height: 400px;
+  border-radius: 0.3125rem;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 4px rgb(0 0 0 / 20%);
+  text-align: center;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+
+.discount__logos {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.discount__button {
+  margin: 0;
+  width: 25%;
+}
+
+.discount__description {
+  width: 55%;
+}
+/* footer */
 
 .footer {
   background-color: #fff0ed;
   text-align: center;
+  margin-top: 100px;
+  padding: 40px 0;
 }
 
 .footer h3 {
   margin-bottom: 1.25rem;
 }
 
-.footer-socials,
-.footer-address,
-.footer-hours {
+.footer__socials,
+.footer__address,
+.footer__hours {
   display: inline-block;
-  width: auto;
-  height: auto;
   padding: 40px;
   margin: 40px;
   border-radius: 10px;
