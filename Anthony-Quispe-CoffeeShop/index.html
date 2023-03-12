@@ -21,7 +21,7 @@
             <a href="../index.html"
               ><img
                 class="nav__logos"
-                src="../Assets/coffee-beans-logo-and-footer.svg"
+                src="./Assets/logos/coffee-beans-logo-and-footer.svg"
                 alt="coffee bean logo"
               />
             </a>
@@ -30,9 +30,7 @@
           <ul class="nav__list">
             <a href="../index.html"><li class="nav__li">ABOUT</li></a>
             <a href="./menu.html"><li class="nav__li">MENU</li> </a>
-            <a href="./menu.html"
-              ><li class="nav__li nav__li--shop">SHOP NOW</li>
-            </a>
+            <a href="./menu.html"><li class="nav__li--shop">SHOP NOW</li> </a>
           </ul>
         </section>
       </nav>
@@ -44,14 +42,16 @@
             Coffee is a brewed drink prepared from roasted coffee beans, the
             seeds of berries from certain Coffea species
           </p>
-          <a href="./Page/menu.html"
-            ><button type="hero__button">SHOP NOW</button></a
-          >
+          <div class="hero__button-container">
+            <button class="hero__button" type="hero__button">SHOP NOW</button>
+            <div class="hero__button--border"></div>
+          </div>
         </div>
+
         <div>
           <img
             class="hero__picture"
-            src="./Assets/coffeebeans-hero.png"
+            src="./Assets/images/coffeebeans-hero.png"
             alt="coffee bag"
           />
         </div>
@@ -64,7 +64,7 @@
       <div class="products__cards">
         <section class="product-section__coffeebeans">
           <div class="product__top">
-            <img src="./Assets/coffeebeans.png" alt="coffee beans" />
+            <img src="./Assets/images/coffeebeans.png" alt="coffee beans" />
           </div>
           <div class="product__bottom">
             <div class="product__text">
@@ -78,11 +78,11 @@
         </section>
         <section class="product-section__coldbrew">
           <div class="product__top">
-            <img src="./Assets/coldbrew.png" alt="coffee beans" />
+            <img src="./Assets/images/coldbrew.png" alt="coffee beans" />
           </div>
           <div class="product__bottom">
             <div class="product__text">
-              <h3>Coffee Beans</h3>
+              <h3>Cold Brew</h3>
               <p class="product__description">1 can</p>
             </div>
             <div class="product__price">
@@ -92,11 +92,11 @@
         </section>
         <section class="product-section__inhousebrew">
           <div class="product__top">
-            <img src="./Assets/inhousebrew.png" alt="coffee beans" />
+            <img src="./Assets/images/inhousebrew.png" alt="coffee beans" />
           </div>
           <div class="product__bottom">
             <div class="product__text">
-              <h3>Coffee Beans</h3>
+              <h3>In-house Brew</h3>
               <p class="product__description">1 cup</p>
             </div>
             <div class="product__price">
@@ -105,8 +105,9 @@
           </div>
         </section>
       </div>
-      <section class="product-section__viewall">
-        <a href="./Page/menu.html"><button type="View ALL">VIEW ALL</button></a>
+      <section class="view__button-container">
+        <button class="view__button" type="View ALL">VIEW ALL</button>
+        <div class="view__button--border"></div>
       </section>
     </section>
 
@@ -120,18 +121,26 @@
             of the way, we strive for excellence.
           </p>
           <div class="discount__logos">
-            <img class="discount__logo" src="./Assets/planting.svg" />
-            <img class="discount__logo" src="./Assets/coffee-beans.svg" />
-            <img class="discount__logo" src="./Assets/coffee-cup.svg" />
+            <img class="discount__logo" src="./Assets/logos/planting.svg" />
+            <img class="discount__logo" src="./Assets/logos/coffee-beans.svg" />
+            <img class="discount__logo" src="./Assets/logos/coffee-cup.svg" />
           </div>
-          <a href="./Page/menu.html"
-            ><button class="discount__button" type="LEARN MORE">
-              LEARN MORE
-            </button>
-          </a>
+          <div class="learn__button-container">
+            <button class="learn__button" type="LEARN MORE">LEARN MORE</button>
+            <div class="learn__button--border"></div>
+          </div>
         </div>
-        <div class="discount__right">
-          <img src="./Assets/tiltedcan.png" alt="" />
+        <div class="discount__right--container">
+          <!-- <img src="./Assets/images/tiltedcan.png" alt="" /> -->
+          <div class="discount__right">
+            <div class="discount__button--border">
+              <img
+                class="discount__image"
+                src="./Assets/images/tiltedcan.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
       <div class="discount-section__banner">
@@ -159,21 +168,23 @@
       <a href="https://www.facebook.com/"
         ><img
           class="footer-socials__logos"
-          src="./Assets/Facebook-Icon.svg"
+          src="./Assets/logos/Facebook-Icon.svg"
           alt="facebook"
       /></a>
       <a href="https://www.yelp.com/"
         ><img
           class="footer-socials__logos"
-          src="./Assets/Yelp-Icon.svg"
+          src="./Assets/logos/Yelp-Icon.svg"
           alt="yelp"
       /></a>
       <a href="https://www.instagram.com/"
         ><img
           class="footer-socials__logos"
-          src="./Assets/Instagram-Icon.svg"
+          src="./Assets/logos/Instagram-Icon.svg"
           alt="instagram"
       /></a>
     </section>
+    <div class="footer__border--left"></div>
+    <div class="footer__border--right"></div>
   </footer>
 </html>
